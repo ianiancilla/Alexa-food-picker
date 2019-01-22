@@ -28,11 +28,19 @@
                     "slots": [
                         {
                             "name": "choice",
-                            "type": "AMAZON.Food"
+                            "type": "AMAZON.Food",
+                            "samples": [
+                                "ho detto {choice}",
+                                "{choice}"
+                            ]
                         },
                         {
                             "name": "choiceB",
-                            "type": "AMAZON.Food"
+                            "type": "AMAZON.Food",
+                            "samples": [
+                                "ho detto {choiceB}",
+                                "{choiceB}"
+                            ]
                         },
                         {
                             "name": "avversativa",
@@ -299,6 +307,84 @@
                     ]
                 }
             ]
-        }
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "TwoOptions",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "choice",
+                            "type": "AMAZON.Food",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.972608025813.414411727412"
+                            }
+                        },
+                        {
+                            "name": "choiceB",
+                            "type": "AMAZON.Food",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.47880685457.819647063155"
+                            }
+                        },
+                        {
+                            "name": "avversativa",
+                            "type": "italianAvversativa",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "cucinare",
+                            "type": "cucinare",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "fare",
+                            "type": "fare",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "mangiare",
+                            "type": "mangiare",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.972608025813.414411727412",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Devo scegliere tra {choiceB} e...?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.47880685457.819647063155",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Devo scegliere tra {choice} e...?"
+                    }
+                ]
+            }
+        ]
     }
 }

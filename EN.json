@@ -32,11 +32,19 @@
                     "slots": [
                         {
                             "name": "choice",
-                            "type": "AMAZON.Food"
+                            "type": "AMAZON.Food",
+                            "samples": [
+                                "I said {choice}",
+                                "{choice}"
+                            ]
                         },
                         {
                             "name": "choiceB",
-                            "type": "AMAZON.Food"
+                            "type": "AMAZON.Food",
+                            "samples": [
+                                "I said {choiceB}",
+                                "{choiceB}"
+                            ]
                         },
                         {
                             "name": "verb",
@@ -94,6 +102,67 @@
                     ]
                 }
             ]
-        }
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "TwoOptions",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "choice",
+                            "type": "AMAZON.Food",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.274796102510.262377884091"
+                            }
+                        },
+                        {
+                            "name": "choiceB",
+                            "type": "AMAZON.Food",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.274796102510.1504565174982"
+                            }
+                        },
+                        {
+                            "name": "verb",
+                            "type": "foodVerb",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.274796102510.1504565174982",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "I should choose between {choice} and?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What is the other food?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.274796102510.262377884091",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "I should choose between {choiceB} and?"
+                    }
+                ]
+            }
+        ]
     }
 }

@@ -25,7 +25,7 @@
          this.emit(':ask', this.t("helpOutput"));
      },
     'AMAZON.CancelIntent': function () {
-         this.emit(':ask', this.t("cancelOutput"));
+         this.emit(':tell', this.t("cancelOutput"));
      },
     'AMAZON.StopIntent': function () {
          this.emit(':tell', this.t("stopOutput"));
@@ -37,7 +37,7 @@
          this.emit(":ask", this.t("fallbackOutput"), this.t("fallbackReprompt"));
      },
      'AMAZON.RepeatIntent': function () {
-         this.emit(":ask", this.t("repeatOutput")+choiceMade);
+         this.emit(":tell", this.t("repeatOutput")+choiceMade);
      },
      'TwoOptions': function () {
          //any intent slot variables are listed here for convenience
@@ -47,7 +47,7 @@
          console.log(choiceB);
          //Your custom intent handling goes here
          choiceMade = choose(choiceA,choiceB);
-         this.emit(":ask", this.t("twoOptionsOutput")+choiceMade);
+         this.emit(":tell", this.t("twoOptionsOutput")+choiceMade);
      },	
      'Unhandled': function () {
          this.emit(':ask', this.t("unhandledOutput"),  this.t("unhandledOutput"));
@@ -260,7 +260,7 @@
             "cancelOutput": "Ok",
             "stopOutput": 'Ok, see you later!',
             "sessionEnded": "",
-            "fallbackOutput": "I'm sorry, I cannot help you with that.",
+            "fallbackOutput": "I'm sorry, I cannot help you with that, try asking something else.",
             "fallbackReprompt": "Try asking for something else.",
             "repeatOutput": "I said ",
             "twoOptionsOutput": "I choose ",
@@ -275,7 +275,7 @@
             "cancelOutput": "Ok",
             "stopOutput": 'Ok, see you later!',
             "sessionEnded": "",
-            "fallbackOutput": "I'm sorry, I cannot help you with that.",
+            "fallbackOutput":  "I'm sorry, I cannot help you with that, try asking something else.",
             "fallbackReprompt": "Try asking for something else.",
             "repeatOutput": "I said ",
             "twoOptionsOutput": "I choose ",
@@ -290,7 +290,7 @@
             "cancelOutput": "Ok",
             "stopOutput": 'Ok, see you later!',
             "sessionEnded": "",
-            "fallbackOutput": "I'm sorry, I cannot help you with that.",
+            "fallbackOutput":  "I'm sorry, I cannot help you with that, try asking something else.",
             "fallbackReprompt": "Try asking for something else.",
             "repeatOutput": "I said ",
             "twoOptionsOutput": "I choose ",
@@ -305,7 +305,7 @@
             "cancelOutput": "Ok",
             "stopOutput": 'Ok, see you later!',
             "sessionEnded": "",
-            "fallbackOutput": "I'm sorry, I cannot help you with that.",
+            "fallbackOutput":  "I'm sorry, I cannot help you with that, try asking something else.",
             "fallbackReprompt": "Try asking for something else.",
             "repeatOutput": "I said ",
             "twoOptionsOutput": "I choose ",
@@ -321,7 +321,7 @@
             "cancelOutput": "Ok",
             "stopOutput": 'Ok, see you later!',
             "sessionEnded": "",
-            "fallbackOutput": "I'm sorry, I cannot help you with that.",
+            "fallbackOutput":  "I'm sorry, I cannot help you with that, try asking something else.",
             "fallbackReprompt": "Try asking for something else.",
             "repeatOutput": "I said ",
             "twoOptionsOutput": "I choose ",
@@ -337,7 +337,7 @@
             "cancelOutput": "Ok",
             "stopOutput": 'Ok, alla prossima!',
             "sessionEnded": "",
-            "fallbackOutput": "Mi spiace, non so aiutarti.",
+            "fallbackOutput": "Mi spiace, non so aiutarti. Prova a chiedermi qualcos'altro",
             "fallbackReprompt": "Prova a chiedermi qualcos'altro.",
             "repeatOutput": "Ho detto ",
             "twoOptionsOutput": "Stavolta scelgo ",
