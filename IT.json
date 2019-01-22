@@ -1,0 +1,304 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "scegli menu",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TwoOptions",
+                    "slots": [
+                        {
+                            "name": "choice",
+                            "type": "AMAZON.Food"
+                        },
+                        {
+                            "name": "choiceB",
+                            "type": "AMAZON.Food"
+                        },
+                        {
+                            "name": "avversativa",
+                            "type": "italianAvversativa"
+                        },
+                        {
+                            "name": "cucinare",
+                            "type": "cucinare"
+                        },
+                        {
+                            "name": "fare",
+                            "type": "fare"
+                        },
+                        {
+                            "name": "mangiare",
+                            "type": "mangiare"
+                        }
+                    ],
+                    "samples": [
+                        "se {cucinare} {choice} {avversativa} {choiceB}",
+                        "se {mangiare} {choice} {avversativa} {choiceB}",
+                        "scegli tra {choice} {avversativa} {choiceB}",
+                        "decidi tra {choice} {avversativa} {choiceB}",
+                        "scegliere tra {choice} {avversativa} {choiceB}",
+                        "decidere tra {choice} {avversativa} {choiceB}",
+                        "cosa {mangiare} tra {choice} {avversativa} {choiceB}",
+                        "cosa {fare} tra {choice} {avversativa} {choiceB}",
+                        "cosa {cucinare} tra {choice} {avversativa} {choiceB}",
+                        "oggi {mangiare} {avversativa} {choiceB}",
+                        "oggi {fare} {avversativa} {choiceB}",
+                        "oggi {cucinare} {avversativa} {choiceB}",
+                        "{mangiare} {choice} {avversativa} {choiceB}",
+                        "{fare} {choice} {avversativa} {choiceB}",
+                        "{cucinare} {choice} {avversativa} {choiceB}",
+                        "è meglio {choice} {avversativa} {choiceB}",
+                        "{choice} {avversativa} {choiceB}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "italianAvversativa",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "e"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oppure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "o"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cucinare",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "possiamo cucinare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potremmo cucinare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dovremmo cucinare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "posso cucinare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potrei cucinare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dovrei cucinare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cuciniamo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cucinare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cucino"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "mangiare",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "potremmo magnare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "possiamo magnare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dovremmo magnare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "possiamo mangiare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potremmo mangiare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dovremmo mangiare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "posso magnare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potrei magnare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dovrei magnare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "posso mangiare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potrei mangiare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dovrei mangiare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "magnare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mangiare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "si magna"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "si mangia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "magnamo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mangiamo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "magno"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mangio"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "fare",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "possiamo fare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potremmo fare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dovremmo fare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "posso fare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potrei fare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dovrei fare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "facciamo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "faccio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fare"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

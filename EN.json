@@ -1,0 +1,99 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "food picker",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TwoOptions",
+                    "slots": [
+                        {
+                            "name": "choice",
+                            "type": "AMAZON.Food"
+                        },
+                        {
+                            "name": "choiceB",
+                            "type": "AMAZON.Food"
+                        },
+                        {
+                            "name": "verb",
+                            "type": "foodVerb"
+                        }
+                    ],
+                    "samples": [
+                        "if we should {verb} {choice} or {choiceB}",
+                        "if I should {verb} {choice} or {choiceB}",
+                        "pick between {choice} or {choiceB}",
+                        "pick between {choice} and {choiceB}",
+                        "choose between {choice} or {choiceB}",
+                        "choose between {choice} and {choiceB}",
+                        "do we {verb} {choice} or {choiceB}",
+                        "do I {verb} {choice} or {choiceB}",
+                        "what's best {choice} or {choiceB}",
+                        "what's better {choice} or {choiceB}",
+                        "what's the best between {choice} and {choiceB}",
+                        "what is best between {choice} and {choiceB}",
+                        "should we {verb} {choice} or {choiceB}",
+                        "should I {verb} {choice} or {choiceB}",
+                        "{choice} or {choiceB} "
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "foodVerb",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "have"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "order"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "make"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cook"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
