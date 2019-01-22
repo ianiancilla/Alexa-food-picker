@@ -311,6 +311,23 @@
             "twoOptionsOutput": "I choose ",
             "unhandledOutput": "I am not sure I understand. Can you try again?"
         }
+        
+    },
+    "en-CA": {
+        "translation": {
+            "launchOutput" : "Hello! Between which two foods do you want me to choose?",
+            "launchReprompt": "Ask me to choose between two types of food. For example, you can ask me: pasta or pizza?",
+            "helpOutput": "I can choose randomly between two types of food. For example, try asking: pasta or pizza?",
+            "cancelOutput": "Ok",
+            "stopOutput": 'Ok, see you later!',
+            "sessionEnded": "",
+            "fallbackOutput": "I'm sorry, I cannot help you with that.",
+            "fallbackReprompt": "Try asking for something else.",
+            "repeatOutput": "I said ",
+            "twoOptionsOutput": "I choose ",
+            "unhandledOutput": "I am not sure I understand. Can you try again?"
+        }
+        
     },
     "it-IT": {
         "translation": {
